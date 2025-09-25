@@ -1,13 +1,11 @@
-# Big Data Project - 1 (Hadoop + PySpark)
+# Web Server Log Analysis (PySpark + Hadoop)
 
-This repository contains Big Data project implemented using Hadoop HDFS and PySpark.
+## Dataset
+- NASA HTTP Web Server Logs (July + August 1995)  
+- Download: ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz
 
-## Web Server Log Analysis
-   - Analyzed NASA web server logs (~2GB) using PySpark on Hadoop.  
-   - Extracted top accessed pages, daily traffic trends, and unique users.
-
-## Tech Stack
-- Hadoop HDFS
-- Apache Spark (PySpark)
-- Datasets: NASA HTTP Logs
-
+## Steps
+1. Upload logs to HDFS:
+   ```bash
+   hdfs dfs -mkdir /logs
+   hdfs dfs -put nasa_log.txt /logs/
