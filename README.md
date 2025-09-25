@@ -2,7 +2,7 @@
 
 This repository contains Big Data project implemented using Hadoop HDFS and PySpark.
 
-Web Server Log Analysis
+## Web Server Log Analysis
    - Analyzed NASA web server logs (~2GB) using PySpark on Hadoop.  
    - Extracted top accessed pages, daily traffic trends, and unique users.
 
